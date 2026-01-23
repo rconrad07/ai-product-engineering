@@ -25,8 +25,8 @@ Translate the initiative into **deliverable product chunks**.
 
 ---
 
-AGEND OUTPUT:
----
+# AGENT OUTPUT:
+
 **Description:** _\<brief, detailed description of the Epic - might include screenshots, graphs, attachments\>_
 
 ---
@@ -50,7 +50,7 @@ AGEND OUTPUT:
 | **Known Risks:**      |                 |
 | **Gaps:**             |                 |
 | **Assumptions:**      |                 |
-| **T-Shirt Size:**     | _\< XS/S/M/L/XL - Reference_ sizing_guide.md> |
+| **T-Shirt Size:**     | _\< XS/S/M/L/XL - Reference:_ templates/product/sizing_guide/guide.md> |
 | **Cross Impacts:**    | _\< Team or Project \>_ |
 | **Dev Complete Date:**| _\< Target a specific date\>_ |
 | **QA Complete Date:** | _\< Target a specific date\>_ |
