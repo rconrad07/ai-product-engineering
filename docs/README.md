@@ -1,15 +1,11 @@
-# docs
+# AI Product & Engineering Agents
 
-Purpose
-- Human-facing explanation of the system: "How this system works".
-- Documentation for contributors, operators, and stakeholders.
+This repository contains a human-in-the-loop AI system designed to:
+1. Generate product documentation
+2. Implement small engineering tasks (≤ 3 story points)
 
-What belongs here
-- ARCHITECTURE.md — system architecture, component responsibilities, data flow diagrams
-- ONBOARDING.md — how to get started, environment setup, running common tasks
-- HOW_IT_WORKS.md — plain-language walkthroughs of typical flows and decision rules
-- CONTRIBUTING.md / ROADMAP.md — process and future plans
-
-Guidance
-- Write for readers who are not looking at code: include diagrams, examples, and sample runs.
-- Keep documentation living and link to agent prompts and orchestrator flows for deeper detail.
+Key principles:
+- GitHub is the system of record
+- Agents are junior-level
+- All outputs require human approval
+- Orchestration is deterministic
