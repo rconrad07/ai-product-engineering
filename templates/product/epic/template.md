@@ -50,7 +50,7 @@ Translate the initiative into **deliverable product chunks**.
 | **Known Risks:**      |                 |
 | **Gaps:**             |                 |
 | **Assumptions:**      |                 |
-| **T-Shirt Size:**     | _\< XS/S/M/L/XL - Reference:_ templates/product/sizing_guide/guide.md> |
+| **T-Shirt Size:**     | _\< XS/S/M/L/XL - Reference:_ `templates/product/sizing_guide/guide.md`> |
 | **Cross Impacts:**    | _\< Team or Project \>_ |
 | **Dev Complete Date:**| _\< Target a specific date\>_ |
 | **QA Complete Date:** | _\< Target a specific date\>_ |
