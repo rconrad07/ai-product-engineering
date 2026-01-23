@@ -21,7 +21,7 @@ Translate the initiative into **deliverable product chunks**.
 
 **Human gate:**
 
-- Required before Epic is created in Jira
+- Required before Epic is published
 
 ---
 
