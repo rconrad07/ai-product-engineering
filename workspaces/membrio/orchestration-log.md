@@ -11,6 +11,7 @@ Initiative Template v1
 
 ## Section Assignments
 - Problem Statement → Product Business Analyst
+- RICE Score → Product Business Analyst
 - Goals & Success Metrics → Product Business Analyst
 - High-Level Solution → Product Solutions Architect
 - Competitive Landscape → Product Market Analyst

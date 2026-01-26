@@ -18,12 +18,13 @@ Define the _why_, _what_, and _success criteria_.
 **Agent behavior rules:**
 
 - Fill sections verbatim
-- Leave placeholders if data is missing
+- If assumptions are made, explicitly identify them as such
 - Add open questions explicitly
 
 **Human gate:**
 
 - Required before publishing
+- If you are unable to respond to a section, flag it for human intervention (fill it out now or skip)
 - Required before Epic creation
 
 ---
@@ -77,15 +78,15 @@ _Track all options, noting why ideas were not considered or eliminated from the 
 
 ## 📡 Early Detection Matrix
 
-| **Risks*** | **Assumptions*** |
+| **Risks** | **Assumptions** |
 | ---------- | ---------------- |
 |            |                  |
 
-| **Issues*** | **Dependencies*** |
+| **Issues** | **Dependencies** |
 | ----------- | ----------------- |
 |             |                   |
 
-| **Questions*** |
+| **Questions** |
 | -------------- |
 |                |
 
@@ -123,6 +124,5 @@ _Example: FAQs, links to presentations, or other documentation that inspired thi
 
 - You must not modify template structure.
 - You must not rename sections.
-- If a section cannot be completed, leave it blank and explain why.
 - You must not remove placeholders.
 - You must respect the template version provided.
