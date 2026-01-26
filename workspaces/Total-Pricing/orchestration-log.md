@@ -9,8 +9,14 @@ Initiative Template v1
 - Product Solutions Architect
 - Product Market / Competitive Analyst
 
+## Agent Execution Notes
+- Solutions Architect:
+  - Initial invocation deferred or minimal output
+  - Re-invoked after context stabilization
+
 ## Section Assignments
 - Problem Statement → Product Business Analyst
+- RICE Score → Product Business Analyst
 - Goals & Success Metrics → Product Business Analyst
 - High-Level Solution → Product Solutions Architect
 - Competitive Landscape → Product Market Analyst
@@ -19,13 +25,9 @@ Initiative Template v1
 Expected: Yes
 
 ## Human Review
-Required before Confluence publishing
+Required before publishing
 
 ## Coverage Validation
-- Missing sections detected: Yes
-- Manual re-runs attempted: 1
-- Human clarification required: Yes
-
-## Clarification Outcome
-- Early Detection Matrix: Deferred
-- RICE Score: Skipped
+- Missing sections detected: TBD
+- Auto re-runs attempted: N/A
+- Human clarification required: TBD

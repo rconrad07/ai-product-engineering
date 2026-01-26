@@ -28,6 +28,6 @@ Expected: Yes
 Required before publishing
 
 ## Coverage Validation
-- Missing sections detected: TBD
-- Auto re-runs attempted: N/A
-- Human clarification required: TBD
+- Missing sections detected: No
+- Manual re-runs attempted: 1
+- Human clarification required: Yes
