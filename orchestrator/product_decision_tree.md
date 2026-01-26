@@ -29,16 +29,23 @@ IF Competitive Market Analyst is invoked:
 - Require citations
 - Flag for human verification
 
-## Step 5: Workspace Enforcement
+## Step 5: Validate Section Coverage
+FOR each expected section:
+- IF section is empty OR missing:
+  - Identify owning agent
+  - Determine if section is required or optional
+
+
+## Step 6: Workspace Enforcement
 - Create /workspaces/<task-name>/
 - Write all outputs to workspace
 - No publishing allowed
 
-## Step 6: Human Review Gate
+## Step 7: Human Review Gate
 - All tasks require approval
 - External research requires verification
 - Missing inputs must be resolved
 
-## Step 7: Completion
+## Step 8: Completion
 - Mark task “Draft Complete”
 - Ready for export to Jira/Confluence
