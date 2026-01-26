@@ -9,6 +9,11 @@ Initiative Template v1
 - Product Solutions Architect
 - Product Market / Competitive Analyst
 
+## Agent Execution Notes
+- Solutions Architect:
+  - Initial invocation deferred or minimal output
+  - Re-invoked after context stabilization
+
 ## Section Assignments
 - Problem Statement → Product Business Analyst
 - RICE Score → Product Business Analyst

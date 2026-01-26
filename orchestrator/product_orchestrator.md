@@ -20,6 +20,7 @@
   - Product Market / Competitive Analyst
 - Manage sequencing and orchestration of agent execution.
 - Consolidate all outputs into a single `/workspaces` artifact and associate the correct template and task.
+- Determine if sections of the template are missing or incomplete. If yes, verify that the user would like to reinvoke appropiate agent or skip that section of the template.
 - Enforce **human approval gates** before exporting to Confluence/Jira.
 - Record when the Competitive Market Analyst has added external research and ensure citations are included.
 
@@ -34,7 +35,6 @@
 ## Inputs
 - Product request
 - Task type
-- Template version to use
 - Existing `/workspaces` state (if any)
 
 ---
