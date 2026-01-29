@@ -1,20 +1,32 @@
 # Product Agent Evaluation Criteria
 
-## Core Dimensions
-| Eval Type           | Purpose                                         |
-| ------------------- | ----------------------------------------------- |
-| Template Compliance | Did the agent write only in allowed sections?   |
-| Factual Integrity   | Are claims supported or flagged as assumptions? |
-| Citation Presence   | Are sources included when required?             |
-| Scope Discipline    | Did the agent exceed its role?                  |
-| Human Edit Rate     | How much you changed after review?              |
+## Agent Quality
+- Stayed within role
+- Did not invent facts
+- Labeled inferences
+- Followed template rules
 
+## Orchestration Quality
+- Orchestrator did not write content
+- Required agents were invoked
+- Correct retry / escalation behavior
+- Artifact authorization enforced
 
-## Signals
-- Passed without revision
-- Passed with revision
-- Rejected
-- Revision count
+## Artifact Quality
+- Template compliance
+- No redundancy
+- Supporting artifacts referenced, not duplicated
 
-These signals are logged per run.
+## Research Quality
+- External sources cited
+- Sources relevant to hospitality / travel tech
+- No internal logs cited as sources
 
+## Human Load
+- None
+- Minor edits
+- Major edits
+- Structural correction required
+
+## Automation Blockers
+- Any violation blocks automation readiness

@@ -61,11 +61,11 @@ https://wyndhamexchangeandrentals.atlassian.net/wiki/spaces/DTS/pages/5374476379
 
 ## 🎯 Scope Delimitation
 
-| **Is*** | **Isn’t*** |
+| **Is** | **Isn’t** |
 | ------- | ---------- |
 |         |            |
 
-| **Does*** | **Doesn’t*** |
+| **Does** | **Doesn’t** |
 | --------- | ------------ |
 |           |              |
 

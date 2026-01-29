@@ -56,21 +56,26 @@
 6. Signal to human reviewers that external research is present and requires verification.
 7. Do not export or publish any content until human approval is confirmed.
 8. Supporting artifacts may be created
-  - Only if referenced from the primary artifact
-  - Only by their owning agent
-  - Must be logged
+
+- Only if referenced from the primary artifact
+- Only by their owning agent
+- Must be logged
 
 ---
+
 ## External Research Handling
 
-- Expect the Market Analyst to use internet sources
-- Flag outputs containing external research
+- Expect the Market Analyst to use internet sources.
+- Flag outputs containing external research.
+- Citations should include the URL where the information was found. Do not accept [1], [2], etc. as citations. Accept only the full URL.
 - If the Market Analyst contains claims without sources, the orchestrator rejects the output and requests revision with citations or downgrades the claims to inferred.
 
 ------
+
 ## Solution Architect Handling
 
 If solution complexity is too high level and no supplemental artifact exists:
+
 - Re-invoke the Solution Architect
 - Request a deeper technical design
 
