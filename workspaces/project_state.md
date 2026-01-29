@@ -39,5 +39,5 @@
 -
 
 ## Approval Status
-- Product Approval: ❌
-- Engineering Approval: ❌
+- Product Approval: Pending
+- Engineering Approval: Pending
