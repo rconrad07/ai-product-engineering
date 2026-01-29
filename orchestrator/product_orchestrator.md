@@ -54,18 +54,16 @@
 6. Signal to human reviewers that external research is present and requires verification.
 7. Do not export or publish any content until human approval is confirmed.
 8. Supporting artifacts may be created
-
-- Only if referenced from the primary artifact
-- Only by their owning agent
-- Must be logged
+  - Only if referenced from the primary artifact
+  - Only by their owning agent
+  - Must be logged
 
 ---
-
 ## External Research Handling
 
 - Expect the Market Analyst to use internet sources
 - Flag outputs containing external research
-- If the Market Analyst contains claims without sources, the orchestrator rejects the output and requests revision.
+- If the Market Analyst contains claims without sources, the orchestrator rejects the output and requests revision with citations or downgrades the claims to inferred.
 
 ---
 

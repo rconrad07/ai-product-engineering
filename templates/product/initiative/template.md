@@ -21,6 +21,7 @@ Define the _why_, _what_, and _success criteria_.
 - If assumptions are made, explicitly identify them as such
 - Add open questions explicitly
 
+
 **Human gate:**
 
 - Required before publishing
