@@ -1,15 +1,56 @@
-# Product State Schema
+# Project State
 
-Required:
-- Product Objective
-- Task Type
-- Target Template
-- Agents Invoked
-- Draft Artifacts Generated
-- Approval Status
+## Objective
 
-Optional:
-- Human Feedback
-- Revision Count
-- Model Used
-- Template Version
+(What are we trying to achieve?)
+
+## Problem Statement
+
+(Why does this matter?)
+
+## Assumptions
+
+-
+
+## Constraints
+
+- Time:
+- Scope:
+- Technical:
+- Business:
+
+## User Personas (optional)
+
+-
+
+## Requirements (optional)
+
+### Functional
+
+-
+
+### Non-Functional
+
+-
+
+## Open Questions (optional)
+
+-
+
+## Decisions Made (optional)
+
+-
+
+## Jira Mapping (optional)
+
+- Epic:
+- Tickets:
+
+## Implementation Notes (optional)
+
+-
+
+## Approval Status (optional)
+
+- Product Approval:
+- Engineering Approval:
