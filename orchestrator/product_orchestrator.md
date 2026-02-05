@@ -75,7 +75,6 @@
 ## Solution Architect Handling
 
 If solution complexity is too high level and no supplemental artifact exists:
-
 - Re-invoke the Solution Architect
 - Request a deeper technical design
 
