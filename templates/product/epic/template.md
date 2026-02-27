@@ -5,13 +5,14 @@ Owner: Product
 Version: v1.0
 Last Updated: 2026-01-23
 -->
-## Template Enforcement Rules
+Template Enforcement Rules (for the agent - do not put in the output)
 
 - You must not modify template structure.
 - You must not rename sections.
 - If a section cannot be completed, leave it blank and explain why.
 - You must not remove placeholders.
 - You must respect the template version provided.
+- Do not use italics in your output
 
 ---
 # Epic Template
@@ -30,7 +31,7 @@ Last Updated: 2026-01-23
 | **Release Plan:** | _\< Initial Release vs Full Release vs Site Hierarchy Release \>_  \< Proposed date when the feature flag should be flipped and for whom \>  \< Plan to remove the feature flag, if applicable \>_ |
 | **Sites Impacted:** | _\< List of sites and siteIDs impacted \>_ |
 
-Note for the Agent: Gherkin should include specific, testable details that eliminate ambiguity. Be comprehensive, emphasis details over being too succinct.
+[Note for the Agent - do not include in output]: Gherkin should include specific, testable details that eliminate ambiguity. Be comprehensive, emphasis details over being too succinct.
 
 ---
 
@@ -41,7 +42,7 @@ Note for the Agent: Gherkin should include specific, testable details that elimi
 | **Known Risks:** |  |
 | **Gaps:** |  |
 | **Assumptions:** |  |
-| **T-Shirt Size:** | _\< XS/S/M/L/XL - Reference_ [_Sizing Guide_](https://wyndhamexchangeandrentals.atlassian.net/wiki/spaces/DTS/pages/5493555287) _\>_ |
+| **T-Shirt Size:** | XS/S/M/L/XL |
 | **Cross Impacts:** | _\< Team or Project \>_ |
 | **Dev Complete Date:** | _\< Target a specific date\>_ |
 | **QA Complete Date:** | _\< Target a specific date\>_ |
