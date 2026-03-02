@@ -1,8 +1,4 @@
-<!--
-Source Initiative: workspaces/Horizon-MVP/Initiative.md
-Related Docs: workspaces/Horizon-MVP/Support-Docs.md
-Epic Focus: Observability, Performance, and Event Tracking Baseline
--->
+
 
 # Epic Template
 
@@ -12,35 +8,40 @@ Epic Focus: Observability, Performance, and Event Tracking Baseline
 
 ## PRODUCT SPACE
 
-| **Item** | **Description** |
-| --- | --- |
-| **Problem Being Solved:** | Without consistent observability and event tracking, Horizon MVP would be difficult to monitor, debug, and optimize. Ad hoc logging and metrics create gaps in understanding user behavior and system health. We need shared patterns and instrumentation across all flows. |
-| **Success Metrics** | * Core funnel events (search initiated, results viewed, property viewed, booking submitted, confirmation displayed, receipt accessed) are tracked end-to-end. <br> * Dashboards and basic alerts exist for critical errors and performance thresholds for the MVP environment. <br> * Engineering teams can use the shared telemetry to diagnose issues and validate behavior. |
-| **Specific Use Case(s):** | Using the Gherkin format, document the scenario(s) as a series of steps that describe the actions and expected outcomes. <br><br> * `Scenario`: An engineer analyzes Horizon MVP funnel behavior using shared event tracking <br> * `Given`: Event tracking has been implemented for key user actions across the funnel <br> * `When`: The engineer opens the observability and analytics dashboards <br> * `Then`: They can see aggregate counts, error rates, and performance metrics for each step <br> * `And`: They can drill into logs or traces to investigate specific errors or anomalies. |
-| **Release Plan:** | Initial Release vs Full Release vs Site Hierarchy Release: <br> * Initial Release: Observability and tracking for Horizon MVP flows in non-production environments, sufficient for POC validation. <br> * Full Release: Future work will extend to production-grade SLIs and SLOs and broader alerting. <br> * Site Hierarchy Release: Focused on ARN MVP siteIDs and domains initially. <br> Proposed date when the feature flag should be flipped and for whom: Instrumentation should be enabled alongside the first end-to-end flows in POC; may use flags to control specific events or integrations. <br> Plan to remove the feature flag, if applicable: To be defined as part of productionization work. |
-| **Sites Impacted:** | All Horizon MVP flows for ARN siteIDs and domains in POC environments. |
+
+| **Item**                  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Problem Being Solved:** | Without consistent observability and event tracking, Horizon MVP would be difficult to monitor, debug, and optimize. Ad hoc logging and metrics create gaps in understanding user behavior and system health. We need shared patterns and instrumentation across all flows.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Success Metrics**       | * Core funnel events (search initiated, results viewed, property viewed, booking submitted, confirmation displayed, receipt accessed) are tracked end-to-end. * Dashboards and basic alerts exist for critical errors and performance thresholds for the MVP environment. * Engineering teams can use the shared telemetry to diagnose issues and validate behavior.                                                                                                                                                                                                                                                                                                                    |
+| **Specific Use Case(s):** | Using the Gherkin format, document the scenario(s) as a series of steps that describe the actions and expected outcomes. * `Scenario`: An engineer analyzes Horizon MVP funnel behavior using shared event tracking * `Given`: Event tracking has been implemented for key user actions across the funnel * `When`: The engineer opens the observability and analytics dashboards * `Then`: They can see aggregate counts, error rates, and performance metrics for each step * `And`: They can drill into logs or traces to investigate specific errors or anomalies.                                                                                                                  |
+| **Release Plan:**         | Initial Release vs Full Release vs Site Hierarchy Release: * Initial Release: Observability and tracking for Horizon MVP flows in non-production environments, sufficient for POC validation. * Full Release: Future work will extend to production-grade SLIs and SLOs and broader alerting. * Site Hierarchy Release: Focused on ARN MVP siteIDs and domains initially. Proposed date when the feature flag should be flipped and for whom: Instrumentation should be enabled alongside the first end-to-end flows in POC; may use flags to control specific events or integrations. Plan to remove the feature flag, if applicable: To be defined as part of productionization work. |
+| **Sites Impacted:**       | All Horizon MVP flows for ARN siteIDs and domains in POC environments.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+
 
 ---
 
 ## DELIVERY SPACE
 
-| **Item** | **Description** |
-| --- | --- |
-| **Known Risks:** | Event schemas may change as product requirements evolve, causing breaking changes in dashboards or consumers. Over-instrumentation could create noise or performance overhead, while under-instrumentation leaves gaps. Integrations with third-party observability tools may require configuration and ongoing maintenance. |
-| **Gaps:** | Final selection and configuration of observability tools (for example, metrics, logs, tracing providers) may not be fully decided. Specific SLOs and alert thresholds for POC versus later stages are still being defined. |
-| **Assumptions:** | Approved observability tools and access patterns are available to the team. Engineering and product stakeholders agree on the minimum funnel events and metrics required for MVP. Platform foundation provides necessary hooks in BFF and frontend layers to implement shared patterns. |
-| **T-Shirt Size:** | M |
-| **Cross Impacts:** | Cross-impacts all user-flow Epics, Platform Foundation, and Integrations (for third-party tools). Instrumentation decisions will influence analytics and reporting downstream. |
-| **Dev Complete Date:** | Target date for implementing core instrumentation and dashboards for Horizon MVP. |
-| **QA Complete Date:** | Target date for validating that events are firing correctly and dashboards reflect expected behavior. |
-| **Feature Flag Link** | Links to feature flags controlling specific telemetry or integrations, if applicable. |
+
+| **Item**               | **Description**                                                                                                                                                                                                                                                                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Known Risks:**       | Event schemas may change as product requirements evolve, causing breaking changes in dashboards or consumers. Over-instrumentation could create noise or performance overhead, while under-instrumentation leaves gaps. Integrations with third-party observability tools may require configuration and ongoing maintenance. |
+| **Gaps:**              | Final selection and configuration of observability tools (for example, metrics, logs, tracing providers) may not be fully decided. Specific SLOs and alert thresholds for POC versus later stages are still being defined.                                                                                                   |
+| **Assumptions:**       | Approved observability tools and access patterns are available to the team. Engineering and product stakeholders agree on the minimum funnel events and metrics required for MVP. Platform foundation provides necessary hooks in BFF and frontend layers to implement shared patterns.                                      |
+| **T-Shirt Size:**      | M                                                                                                                                                                                                                                                                                                                            |
+| **Cross Impacts:**     | Cross-impacts all user-flow Epics, Platform Foundation, and Integrations (for third-party tools). Instrumentation decisions will influence analytics and reporting downstream.                                                                                                                                               |
+| **Dev Complete Date:** | Target date for implementing core instrumentation and dashboards for Horizon MVP.                                                                                                                                                                                                                                            |
+| **QA Complete Date:**  | Target date for validating that events are firing correctly and dashboards reflect expected behavior.                                                                                                                                                                                                                        |
+| **Feature Flag Link**  | Links to feature flags controlling specific telemetry or integrations, if applicable.                                                                                                                                                                                                                                        |
+
 
 ---
 
 ## QA SPACE
 
-| **Item** | **Description** |
-| --- | --- |
+
+| **Item**             | **Description**                                                                                                                                                                                                                                                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **QA Testing Plan:** | QA and engineering will validate that key events fire as expected for representative user journeys, that logs contain necessary context for troubleshooting, and that basic dashboards and alerts behave correctly. Where possible, automated tests will assert the presence of critical events in non-production environments. |
 
 
