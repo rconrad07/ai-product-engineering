@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    .label { font-family: Arial, sans-serif; fill: #333; font-size: 14px; }
+    .label-small { font-family: Arial, sans-serif; fill: #666; font-size: 11px; }
+    .heading { font-family: Arial, sans-serif; fill: #111; font-size: 18px; font-weight: bold; }
+    .pill { fill: #f4f4f4; stroke: #bbbbbb; stroke-width: 1; rx: 10; ry: 10; }
+    .card { fill: #ffffff; stroke: #cccccc; stroke-width: 1; }
+    .img-placeholder { fill: #f0f0f0; stroke: #bbbbbb; stroke-width: 1; }
+    .button-primary { fill: #f6b200; stroke: #d59500; stroke-width: 1; }
+  </style>
+
+  <!-- Page background -->
+  <rect x="0" y="0" width="1200" height="1600" fill="#f9fafb"/>
+
+  <!-- Top search / context bar -->
+  <rect x="80" y="40" width="1040" height="70" fill="#ffffff" stroke="#dddddd" stroke-width="1"/>
+  <text x="110" y="70" class="label-small">Dates</text>
+  <rect x="100" y="80" width="180" height="20" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="110" y="95" class="label-small">Apr 20  Apr 24</text>
+
+  <text x="330" y="70" class="label-small">Guests</text>
+  <rect x="320" y="80" width="160" height="20" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="330" y="95" class="label-small">1 Room · 2 Adults</text>
+
+  <text x="530" y="70" class="label-small">Currency</text>
+  <rect x="520" y="80" width="140" height="20" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <text x="530" y="95" class="label-small">USD</text>
+
+  <rect x="700" y="65" width="110" height="30" class="pill"/>
+  <text x="715" y="84" class="label-small">Change dates</text>
+
+  <rect x="830" y="65" width="110" height="30" class="pill"/>
+  <text x="855" y="84" class="label-small">Modify</text>
+
+  <!-- Sticky filter bar -->
+  <rect x="80" y="130" width="1040" height="50" fill="#ffffff" stroke="#dddddd" stroke-width="1"/>
+  <rect x="100" y="140" width="120" height="30" class="pill"/>
+  <text x="135" y="160" class="label-small" text-anchor="middle">Filters</text>
+
+  <rect x="240" y="140" width="140" height="30" class="pill"/>
+  <text x="310" y="160" class="label-small" text-anchor="middle">Sort: Recommended</text>
+
+  <rect x="400" y="140" width="160" height="30" class="pill"/>
+  <text x="480" y="160" class="label-small" text-anchor="middle">Room type</text>
+
+  <rect x="580" y="140" width="170" height="30" class="pill"/>
+  <text x="665" y="160" class="label-small" text-anchor="middle">4 filters applied</text>
+
+  <!-- Category heading: Standard Rooms -->
+  <text x="80" y="215" class="heading">Standard Rooms</text>
+  <text x="80" y="235" class="label-small">Good for budget-conscious travelers</text>
+
+  <!-- CARD 1 -->
+  <rect x="80" y="250" width="1040" height="150" class="card"/>
+
+    <!-- Image -->
+    <rect x="95" y="265" width="210" height="120" class="img-placeholder"/>
+    <text x="200" y="330" class="label-small" text-anchor="middle">Room photo</text>
+
+    <!-- Text content -->
+    <text x="330" y="285" class="label">Run of House</text>
+    <text x="330" y="305" class="label-small">1 King " Up to 2 guests " 280 sq ft</text>
+
+    <!-- Pills: amenities -->
+    <rect x="330" y="315" width="120" height="24" class="pill"/>
+    <text x="390" y="331" class="label-small" text-anchor="middle">Free cancellation</text>
+
+    <rect x="460" y="315" width="110" height="24" class="pill"/>
+    <text x="515" y="331" class="label-small" text-anchor="middle">Breakfast</text>
+
+    <rect x="580" y="315" width="100" height="24" class="pill"/>
+    <text x="630" y="331" class="label-small" text-anchor="middle">Free WiFi</text>
+
+    <!-- Detail bullets -->
+    <text x="330" y="355" class="label-small">" Pay now or at hotel</text>
+    <text x="330" y="372" class="label-small">" No resort fee · Non-smoking</text>
+    <text x="330" y="389" class="label-small">Show details :</text>
+
+    <!-- Price / CTA block -->
+    <text x="980" y="290" class="label-small" text-anchor="end">Avg / night</text>
+    <text x="980" y="315" class="heading" text-anchor="end">$129</text>
+    <text x="980" y="335" class="label-small" text-anchor="end">Includes taxes &amp; fees</text>
+    <text x="980" y="355" class="label-small" text-anchor="end">Hurry! 1 room left</text>
+    <rect x="880" y="360" width="110" height="32" class="button-primary"/>
+    <text x="935" y="381" class="label-small" text-anchor="middle">Reserve</text>
+
+  <!-- CARD 2 -->
+  <rect x="80" y="420" width="1040" height="150" class="card"/>
+
+    <rect x="95" y="435" width="210" height="120" class="img-placeholder"/>
+    <text x="200" y="500" class="label-small" text-anchor="middle">Room photo</text>
+
+    <text x="330" y="455" class="label">Standard Room</text>
+    <text x="330" y="475" class="label-small">2 Doubles " Up to 4 guests " 320 sq ft</text>
+
+    <rect x="330" y="485" width="120" height="24" class="pill"/>
+    <text x="390" y="501" class="label-small" text-anchor="middle">Free cancellation</text>
+
+    <rect x="460" y="485" width="140" height="24" class="pill"/>
+    <text x="530" y="501" class="label-small" text-anchor="middle">Breakfast included</text>
+
+    <text x="330" y="525" class="label-small">" Pay now</text>
+    <text x="330" y="542" class="label-small">" City view · Non-smoking</text>
+    <text x="330" y="559" class="label-small">Show details :</text>
+
+    <text x="980" y="460" class="label-small" text-anchor="end">Avg / night</text>
+    <text x="980" y="485" class="heading" text-anchor="end">$139</text>
+    <text x="980" y="505" class="label-small" text-anchor="end">Includes taxes &amp; fees</text>
+    <rect x="880" y="530" width="110" height="32" class="button-primary"/>
+    <text x="935" y="551" class="label-small" text-anchor="middle">Reserve</text>
+
+  <!-- "See more" for Standard -->
+  <rect x="80" y="590" width="1040" height="44" class="pill"/>
+  <text x="600" y="617" class="label-small" text-anchor="middle">See more standard rooms</text>
+
+  <!-- Category heading: Suites -->
+  <text x="80" y="670" class="heading">Suites</text>
+  <text x="80" y="690" class="label-small">More space and premium amenities</text>
+
+  <!-- CARD 3 (Suite) -->
+  <rect x="80" y="705" width="1040" height="150" class="card"/>
+
+    <rect x="95" y="720" width="210" height="120" class="img-placeholder"/>
+    <text x="200" y="785" class="label-small" text-anchor="middle">Suite photo</text>
+
+    <text x="330" y="740" class="label">Carson Tower  Deluxe Suite</text>
+    <text x="330" y="760" class="label-small">1 King " Separate living area " 450 sq ft</text>
+
+    <rect x="330" y="770" width="120" height="24" class="pill"/>
+    <text x="390" y="786" class="label-small" text-anchor="middle">Free cancellation</text>
+
+    <rect x="460" y="770" width="110" height="24" class="pill"/>
+    <text x="515" y="786" class="label-small" text-anchor="middle">Breakfast</text>
+
+    <rect x="580" y="770" width="100" height="24" class="pill"/>
+    <text x="630" y="786" class="label-small" text-anchor="middle">Lounge</text>
+
+    <text x="330" y="810" class="label-small">" Late checkout · Priority check-in</text>
+    <text x="330" y="827" class="label-small">Show details :</text>
+
+    <text x="980" y="730" class="label-small" text-anchor="end">Avg / night</text>
+    <text x="980" y="755" class="heading" text-anchor="end">$189</text>
+    <text x="980" y="775" class="label-small" text-anchor="end">Includes taxes &amp; fees</text>
+    <rect x="880" y="800" width="110" height="32" class="button-primary"/>
+    <text x="935" y="821" class="label-small" text-anchor="middle">Reserve</text>
+
+  <!-- "See more" for Suites -->
+  <rect x="80" y="870" width="1040" height="44" class="pill"/>
+  <text x="600" y="897" class="label-small" text-anchor="middle">See more suites</text>
+
+  <!-- Pagination / load more -->
+  <rect x="470" y="960" width="260" height="40" class="card"/>
+  <text x="600" y="985" class="label-small" text-anchor="middle">Load more room types</text>
+
+  <!-- Annotation: F-pattern -->
+  <text x="80" y="1040" class="label-small">Note: List layout supports F-shaped scanning: room name ’ amenities ’ details ’ price / CTA.</text>
+  <text x="80" y="1060" class="label-small">Use sticky filters + grouped categories to reduce choice overload (Hicks Law) and scrolling fatigue.</text>
+</svg>
+
