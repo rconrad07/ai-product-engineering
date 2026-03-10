@@ -37,12 +37,25 @@ The agent emits a `product_wireframe_v1` JSON artifact (see `metadata.json`). It
 
 ## Excalidraw integration strategy (v1)
 
-- The agent **never** outputs raw Excalidraw JSON.
-- Its only responsibility is to emit `product_wireframe_v1` JSON.
-- A separate, lightweight tool can later:
-  - Read the JSON artifact.
+- The agent **does not** output raw Excalidraw JSON directly in chat.
+- Its responsibility is to emit `product_wireframe_v1` JSON, which is then converted to Excalidraw scene JSON for storage.
+- A separate, lightweight tool can:
+  - Read the `product_wireframe_v1` JSON artifact.
   - Map screens and elements to Excalidraw shapes.
   - Export an Excalidraw file you can import into the web app.
+
+### CLI converter (`convert_to_excalidraw.js`)
+
+- A simple Node.js script is provided in this folder: `convert_to_excalidraw.js`.
+- Usage:
+
+  ```bash
+  node agents/product/product_designer_wireframes/convert_to_excalidraw.js \
+    workspaces/Initiative_Evals/dermai/product_wireframes.json \
+    workspaces/Initiative_Evals/dermai/product_wireframes.excalidraw.json
+  ```
+
+- The output file (`*.excalidraw.json`) is directly importable into Excalidraw via **File → Open**.
 
 ## Orchestration usage (conceptual)
 
@@ -54,7 +67,8 @@ Typical call sequence:
    - Personas / flows / acceptance criteria.
 3. This agent returns a single `product_wireframe_v1` JSON artifact.
 4. The orchestrator:
-   - Stores the JSON **inside the corresponding Workspace folder** for the initiative (for example, if inputs came from `workspaces/Initiative_Evals/dermai`, persist the artifact as `workspaces/Initiative_Evals/dermai/product_wireframes.json`).
-   - Ensures that all wireframe artifacts for an initiative live alongside that initiative’s other artifacts, not in the agent directory.
-   - Optionally passes it to a future `excalidraw_export` tool or script.
+   - Stores the `product_wireframe_v1` JSON **inside the corresponding Workspace folder** for the initiative (for example, if inputs came from `workspaces/Initiative_Evals/dermai`, persist the artifact as `workspaces/Initiative_Evals/dermai/product_wireframes.json`).
+   - Immediately runs `convert_to_excalidraw.js` to generate an Excalidraw-readable scene file in the same folder, e.g. `product_wireframes.excalidraw.json`.
+   - Ensures that all wireframe artifacts (both schema JSON and Excalidraw scene JSON) for an initiative live alongside that initiative’s other artifacts, not in the agent directory.
+   - Optionally passes the Excalidraw scene file to any downstream tooling or workflows.
 
