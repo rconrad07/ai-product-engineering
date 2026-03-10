@@ -1,0 +1,351 @@
+{
+  "screens": [
+    {
+      "id": "landing-start-assessment",
+      "name": "Landing / Start Assessment",
+      "goal": "Let the user understand the app purpose and start a new dermatology assessment",
+      "user_flow_step": "1-start",
+      "layout_hint": "single-column",
+      "elements": [
+        {
+          "id": "navbar-main",
+          "type": "navbar",
+          "label": "App title and simple nav",
+          "x": 0,
+          "y": 0,
+          "width": 12,
+          "height": 1,
+          "state": "default",
+          "notes": "Contains app name and optional minimal menu (Inference: menu content not specified)."
+        },
+        {
+          "id": "hero-title",
+          "type": "text",
+          "label": "Short title explaining purpose",
+          "x": 1,
+          "y": 1,
+          "width": 10,
+          "height": 2,
+          "state": "default",
+          "notes": "E.g. 'Check your skin concern with AI'. Copy content is not defined; treat as placeholder."
+        },
+        {
+          "id": "hero-subtitle",
+          "type": "text",
+          "label": "One-line explanation of what the app does",
+          "x": 1,
+          "y": 3,
+          "width": 10,
+          "height": 2,
+          "state": "default",
+          "notes": "Explains that this is a preliminary AI assessment with OTC guidance, not a definitive diagnosis (Inference: exact wording not provided)."
+        },
+        {
+          "id": "card-safety-disclaimer",
+          "type": "card",
+          "label": "Safety disclaimer summary",
+          "x": 1,
+          "y": 5,
+          "width": 10,
+          "height": 2,
+          "state": "default",
+          "notes": "Summarizes that results are informational and not a replacement for professional care; links to full disclaimer screen or modal."
+        },
+        {
+          "id": "btn-start-assessment",
+          "type": "button",
+          "label": "Start new assessment",
+          "x": 3,
+          "y": 7,
+          "width": 6,
+          "height": 1,
+          "state": "default",
+          "notes": "Primary call-to-action to begin photo capture flow."
+        },
+        {
+          "id": "link-learn-more",
+          "type": "button",
+          "label": "How this works",
+          "x": 4,
+          "y": 9,
+          "width": 4,
+          "height": 1,
+          "state": "default",
+          "notes": "Secondary text-style button or link that opens an informational screen or modal explaining AI, privacy, and limitations (Inference: exact content not specified)."
+        }
+      ]
+    },
+    {
+      "id": "photo-capture",
+      "name": "Photo Capture",
+      "goal": "Enable the user to capture a clear photo of the skin concern",
+      "user_flow_step": "2-capture",
+      "layout_hint": "single-column",
+      "elements": [
+        {
+          "id": "navbar-back",
+          "type": "navbar",
+          "label": "Back navigation and simple title",
+          "x": 0,
+          "y": 0,
+          "width": 12,
+          "height": 1,
+          "notes": "Back button to landing screen; title like 'Take a photo'."
+        },
+        {
+          "id": "text-photo-instructions",
+          "type": "text",
+          "label": "Photo quality guidance",
+          "x": 1,
+          "y": 1,
+          "width": 10,
+          "height": 2,
+          "notes": "Short bullets on distance, lighting, and focus to support model accuracy and safety."
+        },
+        {
+          "id": "frame-camera-viewfinder",
+          "type": "image-placeholder",
+          "label": "Live camera viewfinder frame",
+          "x": 1,
+          "y": 3,
+          "width": 10,
+          "height": 6,
+          "notes": "Represents live camera preview where user positions the skin area."
+        },
+        {
+          "id": "btn-shutter",
+          "type": "button",
+          "label": "Capture photo",
+          "x": 4,
+          "y": 9,
+          "width": 4,
+          "height": 1,
+          "state": "default",
+          "notes": "Primary shutter button to capture the image."
+        },
+        {
+          "id": "text-privacy-note",
+          "type": "text",
+          "label": "Short privacy reassurance",
+          "x": 2,
+          "y": 10,
+          "width": 8,
+          "height": 1,
+          "notes": "One-line reminder about secure handling of photos and health data (Inference: exact legal language not provided)."
+        }
+      ]
+    },
+    {
+      "id": "photo-review",
+      "name": "Photo Review",
+      "goal": "Let the user review the captured photo, retake if needed, and confirm upload",
+      "user_flow_step": "3-review",
+      "layout_hint": "single-column",
+      "elements": [
+        {
+          "id": "navbar-review",
+          "type": "navbar",
+          "label": "Back and title for review",
+          "x": 0,
+          "y": 0,
+          "width": 12,
+          "height": 1,
+          "notes": "Back goes to capture screen; title like 'Review photo'."
+        },
+        {
+          "id": "image-captured-photo",
+          "type": "image-placeholder",
+          "label": "Captured photo preview",
+          "x": 1,
+          "y": 1,
+          "width": 10,
+          "height": 6,
+          "notes": "Shows still image user just captured."
+        },
+        {
+          "id": "text-review-guidance",
+          "type": "text",
+          "label": "Guidance on what to check",
+          "x": 1,
+          "y": 7,
+          "width": 10,
+          "height": 1,
+          "notes": "Prompts user to ensure the area of concern is clear, not blurry, and well-lit."
+        },
+        {
+          "id": "btn-retake-photo",
+          "type": "button",
+          "label": "Retake photo",
+          "x": 1,
+          "y": 9,
+          "width": 5,
+          "height": 1,
+          "state": "default",
+          "notes": "Secondary action that returns to photo-capture with camera reactivated."
+        },
+        {
+          "id": "btn-confirm-upload",
+          "type": "button",
+          "label": "Use this photo",
+          "x": 6,
+          "y": 9,
+          "width": 5,
+          "height": 1,
+          "state": "default",
+          "notes": "Primary action that uploads the image and moves to analysis in progress."
+        }
+      ]
+    },
+    {
+      "id": "analysis-in-progress",
+      "name": "Analysis In Progress",
+      "goal": "Show that the photo is being analyzed and manage user expectations about timing",
+      "user_flow_step": "4-analysis",
+      "layout_hint": "single-column",
+      "elements": [
+        {
+          "id": "navbar-analysis",
+          "type": "navbar",
+          "label": "Simple title during processing",
+          "x": 0,
+          "y": 0,
+          "width": 12,
+          "height": 1,
+          "notes": "Title such as 'Analyzing your photo'."
+        },
+        {
+          "id": "image-thumbnail",
+          "type": "image-placeholder",
+          "label": "Small thumbnail of uploaded photo",
+          "x": 4,
+          "y": 2,
+          "width": 4,
+          "height": 3,
+          "notes": "Reassures user that the correct photo is being analyzed."
+        },
+        {
+          "id": "indicator-progress",
+          "type": "card",
+          "label": "Loading indicator area",
+          "x": 3,
+          "y": 5,
+          "width": 6,
+          "height": 2,
+          "notes": "Represents spinner or progress indicator with short message about expected time (<30 seconds target per initiative)."
+        },
+        {
+          "id": "text-safety-reminder",
+          "type": "text",
+          "label": "Reminder not to delay urgent care",
+          "x": 1,
+          "y": 8,
+          "width": 10,
+          "height": 2,
+          "notes": "States that if user believes the condition is an emergency, they should seek immediate professional care regardless of app results."
+        }
+      ]
+    },
+    {
+      "id": "results-diagnosis-and-guidance",
+      "name": "Results: Diagnosis and Guidance",
+      "goal": "Present the preliminary AI assessment, confidence level, and clear OTC vs seek-care guidance",
+      "user_flow_step": "5-results",
+      "layout_hint": "single-column",
+      "elements": [
+        {
+          "id": "navbar-results",
+          "type": "navbar",
+          "label": "Results title and close/back controls",
+          "x": 0,
+          "y": 0,
+          "width": 12,
+          "height": 1,
+          "notes": "Title like 'Your assessment'; back or close returns to landing or previous step."
+        },
+        {
+          "id": "image-results-thumbnail",
+          "type": "image-placeholder",
+          "label": "Thumbnail of assessed photo",
+          "x": 1,
+          "y": 1,
+          "width": 4,
+          "height": 4,
+          "notes": "Shows the analyzed area for context."
+        },
+        {
+          "id": "card-condition-summary",
+          "type": "card",
+          "label": "Condition and confidence summary",
+          "x": 5,
+          "y": 1,
+          "width": 6,
+          "height": 4,
+          "notes": "Contains a short condition label (e.g. 'Likely eczema') and numeric/qualitative confidence (e.g. 78%, 'medium')."
+        },
+        {
+          "id": "badge-severity",
+          "type": "card",
+          "label": "Severity / urgency indicator",
+          "x": 1,
+          "y": 5,
+          "width": 10,
+          "height": 1,
+          "state": "default",
+          "notes": "Visual label such as 'Likely minor' or 'Seek care soon'. Inference: exact thresholds and categories to be defined by clinical and product teams."
+        },
+        {
+          "id": "card-next-step-recommendation",
+          "type": "card",
+          "label": "Next steps: OTC vs seek professional care",
+          "x": 1,
+          "y": 6,
+          "width": 10,
+          "height": 2,
+          "notes": "Plain-language recommendation emphasizing whether user can likely use OTC options or should see a clinician, aligned with initiative scope."
+        },
+        {
+          "id": "card-otc-options",
+          "type": "card",
+          "label": "OTC treatment options overview",
+          "x": 1,
+          "y": 8,
+          "width": 10,
+          "height": 2,
+          "notes": "High-level OTC treatment categories (e.g. 'hydrocortisone cream'), without specific brands unless defined later (Inference: content details not yet specified)."
+        },
+        {
+          "id": "btn-view-condition-details",
+          "type": "button",
+          "label": "Learn more about this condition",
+          "x": 1,
+          "y": 10,
+          "width": 5,
+          "height": 1,
+          "state": "default",
+          "notes": "Opens educational content sourced from the medical knowledge base."
+        },
+        {
+          "id": "btn-new-assessment",
+          "type": "button",
+          "label": "Start another assessment",
+          "x": 6,
+          "y": 10,
+          "width": 5,
+          "height": 1,
+          "state": "default",
+          "notes": "Returns user to landing or capture flow to assess another concern."
+        },
+        {
+          "id": "text-legal-disclaimer",
+          "type": "text",
+          "label": "Legal and medical disclaimer block",
+          "x": 1,
+          "y": 11,
+          "width": 10,
+          "height": 1,
+          "notes": "Short text plus link to full disclaimer, clarifying that this is a preliminary AI assessment and not a definitive medical diagnosis."
+        }
+      ]
+    }
+  ]
+}

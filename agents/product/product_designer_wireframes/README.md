@@ -54,6 +54,7 @@ Typical call sequence:
    - Personas / flows / acceptance criteria.
 3. This agent returns a single `product_wireframe_v1` JSON artifact.
 4. The orchestrator:
-   - Stores the JSON with the initiative.
+   - Stores the JSON **inside the corresponding Workspace folder** for the initiative (for example, if inputs came from `workspaces/Initiative_Evals/dermai`, persist the artifact as `workspaces/Initiative_Evals/dermai/product_wireframes.json`).
+   - Ensures that all wireframe artifacts for an initiative live alongside that initiative’s other artifacts, not in the agent directory.
    - Optionally passes it to a future `excalidraw_export` tool or script.
 
